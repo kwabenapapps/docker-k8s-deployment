@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: webapp-config
+  namespace: webapp
+data:
+  APP_NAME: "docker-k8s-webapp"
+  APP_ENV: "prod"
+  APP_VERSION: "v1.0.0"

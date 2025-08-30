@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    image: docker-k8s-webapp:latest
+    environment:
+      APP_NAME: "docker-k8s-webapp"
+      APP_ENV: "dev"
+      APP_VERSION: "v1.0.0"
+    ports:
+      - "8000:8000"
